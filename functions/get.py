@@ -9,6 +9,7 @@ def get_short_url(event, context):
     response = table.get_item(Key={'id': id})
     if 'Item' not in response:
         return {'statusCode': 404}
+    print(f'response from db: {response}')
     url = response['Item']['url']
     return {
         'statusCode': 301,

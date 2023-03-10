@@ -4,9 +4,6 @@ import pytest
 import boto3
 from botocore.stub import Stubber
 
-
-
-
 @pytest.fixture
 def dynamodb_mock(mocker):
     dynamodb_mock = mocker.MagicMock()

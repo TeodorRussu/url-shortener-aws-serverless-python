@@ -7,6 +7,7 @@ ddb = boto3.resource('dynamodb')
 table = ddb.Table('UrlShortenerTable')
 
 def create_short_url(event, context):
+    print(event)
     url = json.loads(event['body'])['url']
     id = generate_short_url_id()
     table.put_item(Item={'id': id, 'url': url})
