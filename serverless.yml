@@ -6,13 +6,13 @@ provider:
 
 functions:
   create:
-    handler: functions/create.post
+    handler: functions/create_short_url.post
     events:
       - http:
           method: post
           path: /
   get:
-    handler: functions/get.get
+    handler: functions/get_short_url.get
     events:
       - http:
           method: get
