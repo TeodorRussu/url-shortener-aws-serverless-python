@@ -4,6 +4,13 @@ provider:
   name: aws
   runtime: python3.8
 
+plugins:
+  - serverless-python-requirements
+
+custom:
+  pythonRequirements:
+    dockerizePip: non-linux
+
 functions:
   create:
     handler: functions/create.create_short_url
