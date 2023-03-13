@@ -1,8 +1,8 @@
-import json
 import boto3
 
 ddb = boto3.resource('dynamodb')
 table = ddb.Table('UrlShortenerTable')
+
 
 def get_short_url(event, context):
     id = event['pathParameters']['id']

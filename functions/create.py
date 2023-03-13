@@ -1,10 +1,12 @@
 import json
-import boto3
-import string
 import random
+import string
+
+import boto3
 
 ddb = boto3.resource('dynamodb')
 table = ddb.Table('UrlShortenerTable')
+
 
 def create_short_url(event, context):
     print(event)
