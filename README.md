@@ -33,7 +33,8 @@ Configure your AWS credentials for Serverless Framework:
 
 Replace <your_aws_access_key> and <your_aws_secret_key> with your actual AWS access key and secret key. This command stores your AWS credentials in the Serverless Framework configuration file, so you don't have to enter them every time you deploy your project.
 
-Usage
+### Usage
+
 Navigate to the root directory of your Serverless project in the terminal.
 
 Deploy your project to AWS using the Serverless Framework:
@@ -43,7 +44,8 @@ Deploy your project to AWS using the Serverless Framework:
 
 This command deploys your project to AWS Lambda and sets up any required AWS resources, such as API Gateway or S3 buckets. Once the deployment is complete, the Serverless Framework outputs the URL of your Lambda function and any other relevant information.
 
-Contributing
+### Contributing
+
 If you would like to contribute to this project, please follow these guidelines:
 
 Fork the repository and clone it to your local machine.
