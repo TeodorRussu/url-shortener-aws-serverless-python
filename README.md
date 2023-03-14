@@ -41,6 +41,10 @@ Deploy your project to AWS using the Serverless Framework:
 
 `serverless deploy
 `
+or 
+
+`sls deploy
+`
 
 This command deploys your project to AWS Lambda and sets up any required AWS resources, such as API Gateway or S3 buckets. Once the deployment is complete, the Serverless Framework outputs the URL of your Lambda function and any other relevant information.
 
