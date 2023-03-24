@@ -1,0 +1,11 @@
+Resources:
+  Function:
+    Type: AWS::Serverless::Function
+    Properties:
+      Timeout: 300
+      MemorySize: 704
+      Handler: create.create_short_url
+      CodeUri: /Users/t.russu/PersProjects/url-shortener-sls-python/.aws-sam/build/GetUrlFunction
+      Runtime: python3.8
+      Architectures:
+        - x86_64

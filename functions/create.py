@@ -3,11 +3,11 @@ import random
 import string
 
 import boto3
-
-from functions.validators.input_validator import validate_url
+import validators
 
 ddb = boto3.resource('dynamodb')
 table = ddb.Table('UrlShortenerTable')
+
 
 def create_short_url(event, context):
     print(event)
@@ -37,3 +37,6 @@ def generate_success_response(id):
 def generate_short_url_id():
     return ''.join(random.choices(string.ascii_letters + string.digits, k=6))
 
+
+def validate_url(url):
+    return validators.url(url)
